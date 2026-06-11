@@ -14,27 +14,25 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Khula:wght@300;400;600;700;800&display=swap"
         rel="stylesheet" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../src/css/style.css" />
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link href='https://unpkg.com/css.gg@2.0.0/icons/css/facebook.css' rel='stylesheet'>
 </head>
 
 <body>
-    <!-- <script src="main.js"></script> -->
-
-    <section id="main">
+    <div class="top-bar">
         <div class="header__logo">
-            <a href="index.html">Envato Market</a>
+            <a href="../index.html">Envato Market</a>
         </div>
-    </section>
-    <section id="header">
+    </div>
+    <header class="main-header">
         <div class="header-middle">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-3">
                         <div class="logo__jb">
-                            <a href="index.html">
-                                <img src="img/1.webp" alt="JOBARIA Header-logo" />
+                            <a href="../index.html">
+                                <img src="../src/images/img/1.webp" alt="JOBARIA Header-logo" />
                             </a>
                         </div>
                     </div>
@@ -73,13 +71,13 @@
             <div class="menu">
                 <ul class="navigation">
                     <li>
-                        <a href="index.html">home</a>
+                        <a href="../index.html">home</a>
                     </li>
                     <li>
-                        <a href="index.html">shop</a>
+                        <a href="../index.html">shop</a>
                     </li>
                     <li>
-                        <a href="index.html">blog</a>
+                        <a href="../index.html">blog</a>
                     </li>
                     <li>
                         <a href="contact.html">pages <i class="fa-solid fa-angle-down"></i>
@@ -100,7 +98,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </header>
     <div class="container">
         <nav aria-label="breadcrumb" class="container p">
             <ol class="breadcrumb">
@@ -388,14 +386,14 @@
             </form>
         </center>
     </div>
-    <section id="footer">
+    <footer>
         <div class="container">
             <div class="row">
                 <div class="col-4">
                     <div class="footer-widget-info">
                         <div class="footer-widget-info">
                             <a href="#">
-                                <img src="img/footer-logo-1.webp" />
+                                <img src="../src/images/img/footer-logo-1.webp" alt="JOBARIA Footer Logo" loading="lazy" width="152" height="40" />
                             </a>
                         </div>
                         <div class="short-desc">
@@ -454,7 +452,7 @@
                     <div class="footer-widget__banner">
                         <div class="widget-banner">
                             <a href="#">
-                                <img src="img/widgets-banner.webp" />
+                                <img src="../src/images/img/widgets-banner.webp" alt="Banner quảng cáo" loading="lazy" width="300" height="400" />
                             </a>
                         </div>
                         <div class="row">
@@ -535,8 +533,29 @@
                 </div>
             </div>
         </div>
-    </section>
-    <section id="footer-bottom">
+    </footer>
+    <div class="footer-bottom">
+            <div class="row">
+                <div class="col-6">
+                    <div class="copyright">
+                        <span>
+                            Copyright © 2022
+                            <a href="#">Jobaria.</a>
+                            All rights reserved.
+                        </span>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="payment">
+                        <a href="#">
+                            <img src="../src/images/img/payment.webp" alt="Phương thức thanh toán" loading="lazy" width="300" height="30" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
         <div class="container">
             <div class="row">
                 <div class="col-6">
@@ -551,13 +570,14 @@
                 <div class="col-6">
                     <div class="payment">
                         <a href="#">
-                            <img src="img/payment.webp" />
+                            <img src="../src/images/img/payment.webp" alt="Phương thức thanh toán" loading="lazy" width="300" height="30" />
                         </a>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+    <script src="../src/js/main.js"></script>
 
 </body>
 <script>

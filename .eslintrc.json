@@ -1,0 +1,28 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "jquery": false,
+    "node": false
+  },
+  "extends": ["eslint:recommended"],
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "script"
+  },
+  "rules": {
+    "indent": ["error", 2],
+    "linebreak-style": ["error", "unix"],
+    "quotes": ["error", "single"],
+    "semi": ["error", "always"],
+    "no-unused-vars": "warn",
+    "no-console": "off",
+    "eqeqeq": "error",
+    "curly": "error",
+    "brace-style": ["error", "1tbs"],
+    "no-multiple-empty-lines": ["error", { "max": 2 }],
+    "no-trailing-spaces": "error",
+    "eol-last": ["error", "always"]
+  },
+  "ignorePatterns": ["node_modules/", "dist/", "*.min.js"]
+}

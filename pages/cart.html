@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 
 <head>
   <meta charset="UTF-8" />
@@ -13,25 +13,23 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Khula:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="../src/css/style.css" />
 </head>
 
 <body>
-  <script src="main.js"></script>
-
-  <section id="main">
+  <div class="top-bar">
     <div class="header__logo">
-      <a href="index.html">Envato Market</a>
+      <a href="../index.html">Envato Market</a>
     </div>
-  </section>
-  <section id="header">
+  </div>
+  <header class="main-header">
     <div class="header-middle">
       <div class="container">
         <div class="row">
           <div class="col-lg-3">
             <div class="logo__jb">
-              <a href="index.html">
-                <img src="img/1.webp" alt="JOBARIA Header-logo" />
+              <a href="../index.html">
+                <img src="../src/images/img/1.webp" alt="JOBARIA Header-logo" />
               </a>
             </div>
           </div>
@@ -72,29 +70,29 @@
 
           <ul class="navigation">
             <li>
-              <a href="index.html">home</a>
+              <a href="../index.html">home</a>
             </li>
             <li>
-              <a href="index.html">shop</a>
+              <a href="../index.html">shop</a>
             </li>
             <li>
-              <a href="index.html">blog</a>
+              <a href="../index.html">blog</a>
             </li>
             <li>
               <a href="contact.html">pages <i class="fa-solid fa-angle-down"></i>
               </a>
               <ul class="subnav">
                 <li>
-                  <a1 href="contact.html">Contact</a1>
+                  <a href="contact.html">Contact</a>
                 </li>
                 <li>
-                  <a1 href="about.html">About</a1>
+                  <a href="about.html">About</a>
                 </li>
                 <li>
-                  <a1 href="faq.html">FAQ</a1>
+                  <a href="faq.html">FAQ</a>
                 </li>
                 <li>
-                  <a1 href="error.html">404Error</a1>
+                  <a href="error.html">404Error</a>
                 </li>
               </ul>
             </li>
@@ -106,67 +104,67 @@
             <a href="#"> <i class="fa-solid fa-phone"></i> 012 345 6789x </a>
           </div>
         </div>
-      </div>
-  </section>
-  <br>
+    </header>
+    <br>
 
   <div class="container">
     <nav aria-label="breadcrumb" class="ms-5">
       <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="#">Home</a></li>
-        <li class="breadcrumb-item">
-          <b1 href="#"> cart</b1>
-        </li>
+        <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Cart</li>
       </ol>
     </nav>
     <hr>
   </div>
 
   <div class="container">
-    <table class="table">
-      <thead>
-        <tr>
-          <th>Remove</th>
-          <th>Images</th>
-          <th>Product</th>
-          <th>Unit Price</th>
-          <th>Quantity</th>
-          <th>Total</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><button class="remove-btn">🗑️</button></td>
-          <td><img src="image/1-1.webp" id="img-table" alt="Juma Rema Pola"></td>
-          <td>Juma Rema Pola</td>
-          <td>$46.80</td>
-          <td><input type="number" value="1" min="1"></td>
-          <td>$46.80</td>
-        </tr>
-        <tr>
-          <td><button class="remove-btn">🗑️</button></td>
-          <td><img src="image/1-7.webp" id="img-table" alt="Bag Goodscool Model"></td>
-          <td>Bag Goodscool Model</td>
-          <td>$71.80</td>
-          <td><input type="number" value="1" min="1"></td>
-          <td>$71.80</td>
-        </tr>
-
-
-
-      </tbody>
-    </table>
+    <div class="table-responsive">
+      <table class="table align-middle">
+        <thead>
+          <tr>
+            <th>Remove</th>
+            <th>Image</th>
+            <th>Product</th>
+            <th>Unit Price</th>
+            <th>Quantity</th>
+            <th>Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><button class="remove-btn" type="button">🗑️</button></td>
+            <td><img src="../src/images/img/1-1.webp" id="img-table" alt="Juma Rema Pola"></td>
+            <td>Juma Rema Pola</td>
+            <td>$46.80</td>
+            <td><input type="number" value="1" min="1"></td>
+            <td>$46.80</td>
+          </tr>
+          <tr>
+            <td><button class="remove-btn" type="button">🗑️</button></td>
+            <td><img src="../src/images/img/1-7.webp" id="img-table" alt="Bag Goodscool Model"></td>
+            <td>Bag Goodscool Model</td>
+            <td>$71.80</td>
+            <td><input type="number" value="1" min="1"></td>
+            <td>$71.80</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </div>
 
 
   <div class="container">
-    <div class="col justify-content-between d-sm-flex">
-      <div class="col-7">
-        <input type="text" id="fname" name="fname" value="coupcode">
-        <button class="apply-coupon-button " id="add-to-cart"> APPLY COUPON </button>
+    <div class="row justify-content-between align-items-center g-3">
+      <div class="col-12 col-md-7">
+        <div class="d-flex gap-2 flex-column flex-sm-row">
+          <input type="text" id="fname" name="fname" value="coupon code" class="form-control" />
+          <button class="apply-coupon-button" type="button">APPLY COUPON</button>
+        </div>
       </div>
 
-      <button class="update-cart-button " id="add-to-cart" style="border-radius: 5px;"> UPDATE CART </button>
+      <div class="col-12 col-md-5 text-md-end">
+        <button class="update-cart-button" type="button" style="border-radius: 5px;">UPDATE CART</button>
+      </div>
     </div>
   </div>
 
@@ -175,51 +173,48 @@
     <div class="container cart-totals">
       <h2>Cart Totals</h2>
       <table class="table">
-        <thead>
+        <tbody>
           <tr>
-            <th scope="col">Subtotal</th>
-            <th scope="col">$118.60</th>
+            <th scope="row">Subtotal</th>
+            <td>$118.60</td>
           </tr>
           <tr>
-            <th scope="col">Total</th>
-            <th scope="col">$118.60</th>
+            <th scope="row">Total</th>
+            <td>$118.60</td>
           </tr>
-        </thead>
+        </tbody>
       </table>
-      <button class="proceed-button " id="add-to-cart">Proceed To Checkout</button>
+      <button class="proceed-button" type="button">Proceed To Checkout</button>
     </div>
   </div>
-  <div class="khung">
-    <br><br><br>
-    <center>
+  <div class="khung py-5">
+    <div class="container text-center">
       <h2 class="text-uppercase">join our</h2>
       <h3>newsletter now!</h3>
-      <p>Subscribe to the Jobaria mailing list to receive updates on new
-        arrivals,
-        offers </p>
+      <p>Subscribe to the Jobaria mailing list to receive updates on new arrivals, offers</p>
       <p>and other discount information.</p>
       <form action="http://devitems.us11.list-manage.com/subscribe/post?u=6bbb9b6f5827bd842d9640c82&amp;id=05d85f18ef"
         method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
         class="newsletters-form validate" target="_blank" novalidate="">
         <div id="mc_embed_signup_scroll">
           <div id="mc-form" class="mc-form subscribe-form pt--15">
-            <input id="mc-email" type="email" autocomplete="off" placeholder="Enter your email address">
-            <button class="newsletter-btn" id="mc-submit">
+            <input id="mc-email" type="email" autocomplete="off" placeholder="Enter your email address" />
+            <button class="newsletter-btn" id="mc-submit" type="submit">
               <i class="fas fa-paper-plane" aria-hidden="true"></i>
             </button>
           </div>
         </div>
       </form>
-    </center>
+    </div>
   </div>
-  <section id="footer">
+  <footer>
     <div class="container">
       <div class="row">
         <div class="col-4">
           <div class="footer-widget-info">
             <div class="footer-widget-info">
               <a href="#">
-                <img src="img/footer-logo-1.webp" />
+                <img src="../src/images/img/footer-logo-1.webp" alt="JOBARIA Footer Logo" loading="lazy" width="152" height="40" />
               </a>
             </div>
             <div class="short-desc">
@@ -278,7 +273,7 @@
           <div class="footer-widget__banner">
             <div class="widget-banner">
               <a href="#">
-                <img src="img/widgets-banner.webp" />
+                <img src="../src/images/img/widgets-banner.webp" alt="Banner quảng cáo" loading="lazy" width="300" height="400" />
               </a>
             </div>
             <div class="row">
@@ -359,8 +354,8 @@
         </div>
       </div>
     </div>
-  </section>
-  <section id="footer-bottom">
+  </footer>
+  <div class="footer-bottom">
     <div class="container">
       <div class="row">
         <div class="col-6">
@@ -375,16 +370,14 @@
         <div class="col-6">
           <div class="payment">
             <a href="#">
-              <img src="img/payment.webp" />
+              <img src="../src/images/img/payment.webp" alt="Phương thức thanh toán" loading="lazy" width="300" height="30" />
             </a>
           </div>
         </div>
       </div>
     </div>
-  </section>
-  <section id="slider"></section>
-  <section id="content"></section>
-  <section id="footer"></section>
+  </div>
+  <script src="../src/js/main.js"></script>
 </body>
 
 </html>

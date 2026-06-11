@@ -1,0 +1,93 @@
+<!-- Header Component Template -->
+<!-- Copy this to each page's <header> section -->
+
+<!-- Top Bar -->
+<div class="top-bar">
+  <div class="header__logo">
+    <a href="index.html">Envato Market</a>
+  </div>
+</div>
+
+<!-- Main Header -->
+<header class="main-header">
+  <div class="header-middle">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-4">
+          <div class="logo__jb">
+            <a href="index.html">
+              <img src="src/images/img/1.webp" alt="JOBARIA Header-logo" width="152" height="40" fetchpriority="high" />
+            </a>
+          </div>
+        </div>
+        <div class="col-xl-7 col-md-5">
+          <div class="header-search">
+            <form class="header-search__box" role="search" aria-label="Tìm kiếm sản phẩm">
+              <label for="search-input" class="visually-hidden">Tìm kiếm sản phẩm</label>
+              <input id="search-input" type="search" class="form-control header-search__input" placeholder="Nhập từ khóa tìm kiếm..." aria-label="Nhập từ khóa tìm kiếm" />
+              <div class="header-search__icon">
+                <button type="submit" aria-label="Tìm kiếm">
+                  <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-3">
+          <div class="minicart">
+            <a href="pages/cart.html" aria-label="Giỏ hàng của bạn">
+              <div class="minicart-icon" aria-hidden="true">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="cart-count" aria-label="Số lượng sản phẩm">0</span>
+              </div>
+              <div class="minicart-text">
+                <span>Giỏ hàng</span>
+              </div>
+              <div class="total">
+                <span class="cart-total">0.00$</span>
+              </div>
+            </a>
+            <a href="#" class="menu-btn">
+              <i class="fa-solid fa-bars js-sidebar-toggle" aria-label="Mở menu"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <nav class="navbar d-lg-block">
+    <div class="container">
+      <div class="menu">
+        <nav aria-label="Menu chính">
+          <ul class="navigation">
+            <li><a href="index.html" aria-current="page">Trang chủ</a></li>
+            <li><a href="index.html">Cửa hàng</a></li>
+            <li><a href="index.html">Blog</a></li>
+            <li>
+              <a href="#" aria-haspopup="true">Trang <i class="fa-solid fa-angle-down" aria-hidden="true"></i></a>
+              <ul class="subnav" role="menu">
+                <li role="none"><a href="#" role="menuitem">Liên hệ</a></li>
+                <li role="none"><a href="#" role="menuitem">Giới thiệu</a></li>
+                <li role="none"><a href="#" role="menuitem">FAQ</a></li>
+                <li role="none"><a href="#" role="menuitem">404</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Về chúng tôi</a></li>
+          </ul>
+        </nav>
+        <!-- Sidebar (for mobile) -->
+        <ul class="sidebar">
+          <li><a href="#" class="js-sidebar-close"><i class="fa-solid fa-xmark"></i></a></li>
+          <li><a href="index.html">Trang chủ</a></li>
+          <li><a href="index.html">Cửa hàng</a></li>
+          <li><a href="index.html">Blog</a></li>
+          <li><a href="#">Trang <i class="fa-solid fa-angle-down"></i></a></li>
+          <li><a href="#">Về chúng tôi</a></li>
+        </ul>
+        <div class="hotline">
+          <a href="#"><i class="fa-solid fa-phone"></i> 012 345 6789</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
