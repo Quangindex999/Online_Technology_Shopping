@@ -29,8 +29,6 @@
     <!-- Preconnect to external resources -->
     <link rel="preconnect" href="https://cdn.jsdelivr.net" />
     <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
     <!-- Preload critical CSS -->
     <link rel="preload" href="src/css/style.css" as="style" />
@@ -49,10 +47,6 @@
       integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Khula:wght@300;400;600;700;800&display=swap"
-      rel="stylesheet"
     />
     <link rel="stylesheet" href="src/css/style.css" />
   </head>
@@ -86,7 +80,7 @@
                   <input
                     id="search-input"
                     type="search"
-                    class="form-control header-search__input"
+                    class="form-control header-search__input input-field"
                     placeholder="Nhập từ khóa tìm kiếm..."
                     aria-label="Nhập từ khóa tìm kiếm"
                   />
@@ -128,10 +122,10 @@
                 <a href="index.html" aria-current="page">Trang chủ</a>
               </li>
               <li>
-                <a href="index.html">Cửa hàng</a>
+                <a href="pages/shopnow.html">Cửa hàng</a>
               </li>
               <li>
-                <a href="index.html">Blog</a>
+                <a href="#">Blog</a>
               </li>
               <li>
                 <a href="#" aria-haspopup="true"
@@ -157,10 +151,10 @@
               <a href="index.html">home</a>
             </li>
             <li>
-              <a href="index.html">shop</a>
+              <a href="pages/shopnow.html">shop</a>
             </li>
             <li>
-              <a href="index.html">blog</a>
+              <a href="#">blog</a>
             </li>
             <li>
               <a href="contact.html">pages <i class="fa-solid fa-angle-down"></i> </a>
@@ -196,8 +190,8 @@
       <div class="mobile-menu__content">
         <ul class="mobile-menu__list">
           <li><a href="index.html">Trang chủ</a></li>
-          <li><a href="index.html">Cửa hàng</a></li>
-          <li><a href="index.html">Blog</a></li>
+          <li><a href="pages/shopnow.html">Cửa hàng</a></li>
+          <li><a href="#">Blog</a></li>
           <li class="has-submenu">
             <a href="#">Trang <i class="fa-solid fa-chevron-down"></i></a>
             <ul class="submenu">
@@ -220,11 +214,11 @@
       <div class="list" role="list">
         <article class="item" role="listitem">
           <div class="slider-content">
-            <span>Premium eCommerce Html Template</span>
-            <h2>Hurry Up!</h2>
-            <h3>2022 Xail Gear VR</h3>
-            <h5>Starting At $19.00</h5>
-            <a href="pages/shopnow.html" class="slide-btn">Shop Now</a>
+            <span class="animate-fade-in-up">Premium eCommerce Html Template</span>
+            <h2 class="animate-fade-in-up delay-100">Hurry Up!</h2>
+            <h3 class="animate-fade-in-up delay-200">2022 Xail Gear VR</h3>
+            <h5 class="animate-fade-in-up delay-300">Starting At $19.00</h5>
+            <a href="pages/shopnow.html" class="btn animate-fade-in-up delay-300">Shop Now</a>
           </div>
           <img
             src="src/images/img/3.webp"
@@ -234,11 +228,11 @@
         </article>
         <article class="item" role="listitem">
           <div class="slider-content slider-content--next">
-            <span>Premium eCommerce Html Template</span>
-            <h2>Xail D40</h2>
-            <h3>20% Off Digital Camera</h3>
-            <h5>Starting At $19.00</h5>
-            <a href="pages/shopnow.html" class="slide-btn">Shop Now</a>
+            <span class="animate-fade-in-up">Premium eCommerce Html Template</span>
+            <h2 class="animate-fade-in-up delay-100">Xail D40</h2>
+            <h3 class="animate-fade-in-up delay-200">20% Off Digital Camera</h3>
+            <h5 class="animate-fade-in-up delay-300">Starting At $19.00</h5>
+            <a href="pages/shopnow.html" class="btn animate-fade-in-up delay-300">Shop Now</a>
           </div>
           <img
             src="src/images/img/4.webp"
@@ -1051,8 +1045,8 @@
               laboriosam nesciunt fuga, possimus labore, ea doloribus quas voluptatum ipsam?
             </p>
           </div>
-          <div class="slide-btn__second">
-            <a href="shopnow.html">Shop Now</a>
+          <div class="mt-3">
+            <a href="shopnow.html" class="btn">Shop Now</a>
           </div>
         </div>
       </section>
@@ -1236,11 +1230,12 @@
                       <input
                         id="newsletter-email"
                         type="email"
+                        class="input-field"
                         placeholder="Nhập địa chỉ email của bạn"
                         aria-label="Nhập địa chỉ email"
                         required
                       />
-                      <button class="newsletter-btn" type="submit" aria-label="Đăng ký nhận tin">
+                      <button class="btn newsletter-btn" type="submit" aria-label="Đăng ký nhận tin">
                         <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
                       </button>
                     </form>

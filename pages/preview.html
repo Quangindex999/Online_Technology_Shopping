@@ -10,10 +10,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Khula:wght@300;400;600;700;800&display=swap"
-        rel="stylesheet" />
     <link rel="stylesheet" href="../src/css/style.css" />
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link href='https://unpkg.com/css.gg@2.0.0/icons/css/facebook.css' rel='stylesheet'>
@@ -74,10 +70,10 @@
                         <a href="../index.html">home</a>
                     </li>
                     <li>
-                        <a href="../index.html">shop</a>
+                        <a href="shopnow.html">shop</a>
                     </li>
                     <li>
-                        <a href="../index.html">blog</a>
+                        <a href="#">blog</a>
                     </li>
                     <li>
                         <a href="contact.html">pages <i class="fa-solid fa-angle-down"></i>
@@ -108,7 +104,7 @@
         </nav>
         <hr>
     </div>
-    <div class="container d-sm-flex">
+    <div class="container d-sm-flex animate-fade-in-up">
         <div class="d-sm-block">
             <div class="main d-sm-block">
                 <img src="image/1-6.webp" alt="" class="img-feature">
@@ -128,7 +124,7 @@
                 <img src="image/1-7.webp" alt="" style="margin-left: 10px;">
             </div>
         </div>
-        <div class="d-sm-block" style="margin-left: 30px;">
+        <div class="d-sm-block animate-fade-in-up delay-100" style="margin-left: 30px;">
             <h4 id="h4">Janon vista fhd 4k</h4>
             <p class="text-black">Reference: demo_1</p>
             <div class="d-sm-flex mt-2">
@@ -165,10 +161,10 @@
             </select>
             <div class="d-sm-flex mt-2">
                 <p style="margin-top: 10px;">Quantity </p>
-                <input class="mt-2" type="number" placeholder="1" value="1" min="1"
-                    style="border-radius: 4px; margin-left: 20px;width: 40px;height:30px;">
+                <input class="input-field mt-2" type="number" placeholder="1" value="1" min="1"
+                    style="margin-left: 20px; width: 60px;">
                 <a href="">
-                    <button class="nut">Add to
+                    <button class="btn">Add to
                         cart</button>
                 </a>
             </div>
@@ -261,7 +257,7 @@
                 <p class="text-black">25/03/2022</p>
                 <p class="text-black" style="font-weight: bold;font-size: 14px;">User</p>
                 <p class="text-black">that's ok !</p>
-                <button id="nut">Write Your Review!</button>
+                <button class="btn">Write Your Review!</button>
             </div>
         </div>
 
@@ -288,7 +284,7 @@
                     <span id="giamgia" class="text-danger">$29.00</span>
                     <br>
                     <br>
-                    <a href="cart.html"><button id="add-to-cart">
+                    <a href="cart.html"><button class="btn w-100 mt-2">
                             add to cart
                         </button></a>
                 </center>
